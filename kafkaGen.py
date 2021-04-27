@@ -7,8 +7,7 @@ def randomname(n):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=n))
 
 def get_option(topic, num):
-    argparser = ArgumentParser(description='This script generates JSON for Kafka stream with multipl
-e topic')
+    argparser = ArgumentParser(description='This script generates JSON for Kafka stream with multiple topic')
     argparser.add_argument('-t', '--topic',
                            default=topic,
                            help='''
