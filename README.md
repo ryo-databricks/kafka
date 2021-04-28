@@ -1,11 +1,26 @@
 # Kafka JSON Streaming Generator
 
 
+This python script generates JSON for Kafka stream with multiple topic.  
+Requires: Python >=3.0  
+
+
 - ### usage
 $ genKafkaStream.py [-h] [-t TOPIC] [-n NUM]
 
-This python script generates JSON for Kafka stream with multiple topic.  
-Requires: Python >=3.0  
+- ### Optional arguments
+~~~
+    -h, --help  
+        show this help message and exit.  
+        
+    -t TOPIC, --topic TOPIC  
+        Specify name of topic. Topic Name will be topic1, topic2, ...  
+        Default: topic
+        
+    -n NUM, --num NUM  
+        Specify number of topic.  
+        Default: 1  
+~~~
 
 - ### Example Usage
 $ python3 genKafkaSrteam.py -n 3  
@@ -24,18 +39,3 @@ utime - int, Unix time at which each line was generated
 word - string, Random 5 chars  
 val1 - string, Random 15 chars  
 val2 - string, Randomly selected from the following three strings [ hoge, fuga, piyo ]  
-
-- ### Optional arguments
-~~~
-    -h, --help  
-        show this help message and exit.  
-        
-    -t TOPIC, --topic TOPIC  
-        Specify name of topic. Topic Name will be topic1, topic2, ...  
-        Default: topic
-        
-    -n NUM, --num NUM  
-        Specify number of topic.  
-        Default: 1  
-~~~
-
