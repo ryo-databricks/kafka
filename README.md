@@ -1,7 +1,7 @@
 # Kafka JSON Streaming Generator
 
 
-This python script generates JSON for Kafka stream with multiple topic.  
+genKafkaStream.py generates JSON for Kafka stream with multiple topic.  
 Requires: Python >=3.0  
 
 
